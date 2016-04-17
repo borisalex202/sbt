@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SBT</title>
 
+    <link href="js/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/johndyer/css/mediaelementplayer.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -116,6 +118,41 @@
                     <button type="button" class="icon-search" data-toggle="collapse" data-target="#global_menu" aria-expanded="false">
                         <i class="glyphicon glyphicon-search"></i>
                     </button>
+                    <button type="button" class="icon-wishlist" data-toggle="collapse" data-target="#wishlist" aria-expanded="false">
+                        <i class="glyphicon glyphicon-star-empty"></i>
+                    </button>
+                    <div id="wishlist" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse">
+                        <i class="glyphicon glyphicon-star"></i>
+                        <svg data-toggle="collapse" class="close_global" data-target="#wishlist" aria-expanded="false" enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <polygon fill="#fff" points="77.6,21.1 49.6,49.2 21.5,21.1 19.6,23 47.6,51.1 19.6,79.2 21.5,81.1 49.6,53 77.6,81.1 79.6,79.2   51.5,51.1 79.6,23 "/>
+                        </svg>
+                        <ul class="wishlist">
+                            <li>
+                                <a href="#">
+                                    <img src="images/product1.png" alt="Сортировщик 2ух карманный  MN345 ">
+                                    Сортировщик 2ух карманный  MN345
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/product1.png" alt="Сортировщик 2ух карманный  MN345 ">
+                                    Сортировщик 2ух карманный  MN345
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/product1.png" alt="Сортировщик 2ух карманный  MN345 ">
+                                    Сортировщик 2ух карманный  MN345
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/product1.png" alt="Сортировщик 2ух карманный  MN345 ">
+                                    Сортировщик 2ух карманный  MN345
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_menu" aria-expanded="false">
@@ -139,7 +176,7 @@
 
                     <ul class="nav navbar-nav navbar-right contacts">
                         <li class="phone"><a href="#"><i class="glyphicon glyphicon-earphone"></i> +375 44 777 97 01</a></li>
-                        <li class="call"><a href="#">обратный звонок</a></li>
+                        <li class="call white"><a href="#">обратный звонок</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -150,166 +187,75 @@
         <div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card_page">
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 related_products">
-                <div id="related_products" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel slide gray lg" data-ride="carousel">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inside">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel-inner" role="listbox">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item active">
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 related_products">
+                    <div id="related_products" class="owl-carousel slide gray">
+                        <div class="item">
+                            <a class="" href="#">
                                 <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
                                 <p>Сортировщики банкнот</p>
                             </a>
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                <img src="images/categories/cat1.png" alt="Счетчики">
-                                <p>Счетчики</p>
-                            </a>
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                <img src="images/categories/cat1.png" alt="Вакуумные упаковщики">
-                                <p>Вакуумные упаковщики</p>
-                            </a>
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                <img src="images/categories/cat1.png" alt="Обандероливатели">
-                                <p>Обандероливатели</p>
-                            </a>
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                <img src="images/categories/cat1.png" alt="Банковские депозитные ячейки">
-                                <p>Банковские депозитные ячейки</p>
-                            </a>
-                            <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                <img src="images/categories/cat1.png" alt="Шкафы металлические">
-                                <p>Шкафы металлические</p>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
                             </a>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
-                                    <p>Сортировщики банкнот</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Счетчики">
-                                    <p>Счетчики</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Вакуумные упаковщики">
-                                    <p>Вакуумные упаковщики</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Обандероливатели">
-                                    <p>Обандероливатели</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Банковские депозитные ячейки">
-                                    <p>Банковские депозитные ячейки</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Шкафы металлические">
-                                    <p>Шкафы металлические</p>
-                                </a>
-                            </div>
-                    </div>
-                    </div>
-
-                    <a class="left carousel-control" href="#related_products" role="button" data-slide="prev">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M129,266.5c2.6,0,5.3-1,7.3-3l254-245.5c4.2-4,4.3-10.7,0.3-14.9c-4-4.2-10.7-4.3-14.9-0.3l-254,245.5   c-4.2,4-4.3,10.7-0.3,14.9C123.5,265.5,126.2,266.5,129,266.5z" fill="#ffffff"/><path d="M383,512c2.8,0,5.5-1.1,7.6-3.2c4-4.2,3.9-10.9-0.3-14.9l-254-245.5c-4.2-4-10.9-3.9-14.9,0.3   c-4,4.2-3.9,10.9,0.3,14.9l254,245.5C377.7,511,380.4,512,383,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
-                    <a class="right carousel-control" href="#related_products" role="button" data-slide="next">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M383,266.5c-2.6,0-5.3-1-7.3-3l-254-245.5c-4.2-4-4.3-10.7-0.3-14.9c4-4.2,10.7-4.3,14.9-0.3l254,245.5   c4.2,4,4.3,10.7,0.3,14.9C388.5,265.5,385.8,266.5,383,266.5z" fill="#ffffff"/><path d="M129,512c-2.8,0-5.5-1.1-7.6-3.2c-4-4.2-3.9-10.9,0.3-14.9l254-245.5c4.2-4,10.9-3.9,14.9,0.3   c4,4.2,3.9,10.9-0.3,14.9L136.3,509C134.3,511,131.6,512,129,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
-                </div>
-                <div id="related_products_sm" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel slide gray sm" data-ride="carousel">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inside">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel-inner" role="listbox">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item active">
-                                <a class="col-lg-4 col-md-4 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
-                                    <p>Сортировщики банкнот</p>
-                                </a>
-                                <a class="col-lg-4 col-md-4 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Счетчики">
-                                    <p>Счетчики</p>
-                                </a>
-                                <a class="col-lg-4 col-md-4 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Вакуумные упаковщики">
-                                    <p>Вакуумные упаковщики</p>
-                                </a>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Обандероливатели">
-                                    <p>Обандероливатели</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Банковские депозитные ячейки">
-                                    <p>Банковские депозитные ячейки</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-4" href="#">
-                                    <img src="images/categories/cat1.png" alt="Шкафы металлические">
-                                    <p>Шкафы металлические</p>
-                                </a>
-                            </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="" href="#">
+                                <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                                <p>Сортировщики банкнот</p>
+                            </a>
                         </div>
                     </div>
-
-                    <a class="left carousel-control" href="#related_products_sm" role="button" data-slide="prev">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M129,266.5c2.6,0,5.3-1,7.3-3l254-245.5c4.2-4,4.3-10.7,0.3-14.9c-4-4.2-10.7-4.3-14.9-0.3l-254,245.5   c-4.2,4-4.3,10.7-0.3,14.9C123.5,265.5,126.2,266.5,129,266.5z" fill="#ffffff"/><path d="M383,512c2.8,0,5.5-1.1,7.6-3.2c4-4.2,3.9-10.9-0.3-14.9l-254-245.5c-4.2-4-10.9-3.9-14.9,0.3   c-4,4.2-3.9,10.9,0.3,14.9l254,245.5C377.7,511,380.4,512,383,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
-                    <a class="right carousel-control" href="#related_products_sm" role="button" data-slide="next">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M383,266.5c-2.6,0-5.3-1-7.3-3l-254-245.5c-4.2-4-4.3-10.7-0.3-14.9c4-4.2,10.7-4.3,14.9-0.3l254,245.5   c4.2,4,4.3,10.7,0.3,14.9C388.5,265.5,385.8,266.5,383,266.5z" fill="#ffffff"/><path d="M129,512c-2.8,0-5.5-1.1-7.6-3.2c-4-4.2-3.9-10.9,0.3-14.9l254-245.5c4.2-4,10.9-3.9,14.9,0.3   c4,4.2,3.9,10.9-0.3,14.9L136.3,509C134.3,511,131.6,512,129,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
-                </div>
-                <div id="related_products_xs" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel slide gray xs" data-ride="carousel">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inside">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel-inner" role="listbox">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item active">
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
-                                    <p>Сортировщики банкнот</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Счетчики">
-                                    <p>Счетчики</p>
-                                </a>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Вакуумные упаковщики">
-                                    <p>Вакуумные упаковщики</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Обандероливатели">
-                                    <p>Обандероливатели</p>
-                                </a>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Банковские депозитные ячейки">
-                                    <p>Банковские депозитные ячейки</p>
-                                </a>
-                                <a class="col-lg-2 col-md-3 col-sm-4 col-xs-6" href="#">
-                                    <img src="images/categories/cat1.png" alt="Шкафы металлические">
-                                    <p>Шкафы металлические</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="left carousel-control" href="#related_products_xs" role="button" data-slide="prev">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M129,266.5c2.6,0,5.3-1,7.3-3l254-245.5c4.2-4,4.3-10.7,0.3-14.9c-4-4.2-10.7-4.3-14.9-0.3l-254,245.5   c-4.2,4-4.3,10.7-0.3,14.9C123.5,265.5,126.2,266.5,129,266.5z" fill="#ffffff"/><path d="M383,512c2.8,0,5.5-1.1,7.6-3.2c4-4.2,3.9-10.9-0.3-14.9l-254-245.5c-4.2-4-10.9-3.9-14.9,0.3   c-4,4.2-3.9,10.9,0.3,14.9l254,245.5C377.7,511,380.4,512,383,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
-                    <a class="right carousel-control" href="#related_products_xs" role="button" data-slide="next">
-                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                            <g><path d="M383,266.5c-2.6,0-5.3-1-7.3-3l-254-245.5c-4.2-4-4.3-10.7-0.3-14.9c4-4.2,10.7-4.3,14.9-0.3l254,245.5   c4.2,4,4.3,10.7,0.3,14.9C388.5,265.5,385.8,266.5,383,266.5z" fill="#ffffff"/><path d="M129,512c-2.8,0-5.5-1.1-7.6-3.2c-4-4.2-3.9-10.9,0.3-14.9l254-245.5c4.2-4,10.9-3.9,14.9,0.3   c4,4.2,3.9,10.9-0.3,14.9L136.3,509C134.3,511,131.6,512,129,512z" fill="#ffffff"/></g>
-                        </svg>
-                    </a>
                 </div>
             </div>
             
@@ -376,7 +322,7 @@
                     Kisan K500 PRO RUR открывает новые возможности в обработке наличности. Прибор, обслуживаемый одним кассиром, справляется с работой быстрее, чем четыре кассира, производящих сортировку вручную. Может обрабатывать в сутки до 200 тысяч банкнот;</p>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <a href="#more_link" class="beauty_link" data-toggle="collapse" aria-expanded="false">все возможности</a>
+                    <a href="#more_link" class="beauty_link change_text" data-toggle="collapse" aria-expanded="false">все возможности</a>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse" id="more_link">
                     <p>Больше текста...</p>
@@ -575,7 +521,7 @@
 
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 carousel-inner" role="listbox">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item active">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -588,7 +534,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -601,7 +547,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -614,7 +560,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -627,7 +573,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -640,7 +586,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><img src="images/review_bank1.png" alt="Отзыв"></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 main_img"><img src="images/review_bank1.png" alt="Отзыв"></div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 desc">
                                     <p class="title">Раффайзен банк</p>
                                     <p class="fix-height">Со временем технология производства машинок для счёта денег претерпела ряд изменений, их подвергали пересмотру и усовершенствованию, что  позволило им начать функционировать  гораздо более быстро и точно.  Счётчики банкнот – необходимое банковское оборудование для компаний, сталкивающихся с большими объёмами денежных средств, обязательный атрибут бизнеса.  Они  отлично  справляются с банкнотами в любом состоянии, а специальный механизм, распознающий сдвоенные купюры, гарантирует высокую точность подсчёта.   В зависимости от задач,  времени и интенсивности эксплуатации, различают четыре класса: портативные счётчики денег, счётчики банкнот офисного класса, счётчики банкнот среднего класса  и счётчики денег банковского класса. </p>
@@ -914,7 +860,7 @@
             </div>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 call_me">
-                <button type="button" class="btn-default">Перезвони мне</button>
+                <button type="button" class="btn-default" data-toggle="modal" data-target="#order">Перезвони мне</button>
             </div>
 
         </div><!-- /#content -->
@@ -966,8 +912,18 @@
 
 <script src="js/johndyer/js/mediaelement-and-player.min.js"></script>
 
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+
 <script>
     $(function(){
+        $.fn.toggleHTML = function(a, b) {
+            this.html(function(_, html){
+                return html === a  ? b : a;
+            })
+        };
+        $('.beauty_link.change_text').click(function(){
+            $(this).toggleHTML('скрыть возможности', 'все возможности');
+        });
 
         $('video').mediaelementplayer({
             // if the <video width> is not specified, this is the default
@@ -1018,6 +974,29 @@
             startLanguage: 'ru'
 
         });
+
+        $('#related_products').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                767:{
+                    items:3
+                },
+                992:{
+                    items:4
+                },
+                1200:{
+                    items:5
+                },
+                1600:{
+                    items:6
+                }
+            }
+        })
 
     });
 
