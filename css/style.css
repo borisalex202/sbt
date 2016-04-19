@@ -764,8 +764,17 @@ ol li:before {
   padding: 40px 15px;
   text-align: center;
 }
-.owl-nav .owl-prev,
-.owl-nav .owl-next {
+.related_products .carousel-control svg {
+  width: 26px;
+  height: 43px;
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.default .owl-nav .owl-prev,
+.default .owl-nav .owl-next {
   position: absolute;
   top: 35%;
   width: 53px;
@@ -779,25 +788,16 @@ ol li:before {
   transition: all .5s;
   font-size: 0;
 }
-.related_products .carousel-control svg {
-  width: 26px;
-  height: 43px;
-  position: absolute;
-  top: 18%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.owl-nav .owl-prev:hover,
-.owl-nav .owl-next:hover {
+.default .owl-nav .owl-prev:hover,
+.default .owl-nav .owl-next:hover {
   background-color: #025a75;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
 }
-.owl-nav .owl-prev:before,
-.owl-nav .owl-next:before {
+.default .owl-nav .owl-prev:before,
+.default .owl-nav .owl-next:before {
   position: absolute;
   left: 0;
   right: 0;
@@ -807,18 +807,63 @@ ol li:before {
   width: 21px;
   height: 38px;
 }
-.owl-nav .owl-prev:before {
+.default .owl-nav .owl-prev:before {
   background: url("../images/arrow_left.png") no-repeat;
 }
-.owl-nav .owl-next:before {
+.default .owl-nav .owl-next:before {
   background: url("../images/arrow_right.png") no-repeat;
 }
-.owl-nav .owl-prev {
+.default .owl-nav .owl-prev {
   left: -20px;
 }
-.owl-nav .owl-next {
+.default .owl-nav .owl-next {
   right: -20px;
 }
+
+.easy .owl-nav .owl-prev,
+.easy .owl-nav .owl-next {
+  position: absolute;
+  top: 35%;
+  width: 53px;
+  height: 65px;
+  opacity: .8;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  font-size: 0;
+}
+.easy .owl-nav .owl-prev:hover,
+.easy .owl-nav .owl-next:hover {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.easy .owl-nav .owl-prev:before,
+.easy .owl-nav .owl-next:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 13px;
+  content: '';
+  width: 21px;
+  height: 38px;
+}
+.easy .owl-nav .owl-prev:before {
+  background: url("../images/arrow_gray_left.png") no-repeat;
+}
+.easy .owl-nav .owl-next:before {
+  background: url("../images/arrow_gray_right.png") no-repeat;
+}
+.easy .owl-nav .owl-prev {
+  left: -80px;
+}
+.easy .owl-nav .owl-next {
+  right: -80px;
+}
+
 .related_products .item img {
   max-width: 100%;
   width: auto;
@@ -837,6 +882,7 @@ ol li:before {
 
 .products {
   padding: 40px 16%;
+  display: table;
 }
 .products.standard-padding {
   padding: 40px 50px;
@@ -847,6 +893,8 @@ ol li:before {
   text-align: center;
   background: #fff;
   position: relative;
+  float: none;
+  display: inline-table;
 }
 .product:hover {
   border-left: 1px solid #c8c8c8;
@@ -1179,7 +1227,7 @@ a.beauty_link[aria-expanded="true"]:after {
 }
 
 .gallery {
-  padding: 40px;
+  padding: 40px 9%;
 }
 .gallery .indentation {
   padding: 0 6%;
@@ -1187,17 +1235,13 @@ a.beauty_link[aria-expanded="true"]:after {
 .gallery .item {
   text-align: center;
 }
-.gallery .item > div {
-  padding: 5px 15px;
-  float: none;
-  display: inline-block;
-  margin: 0 0 0 -5px;
-}
-.gallery .item > div img {
+.gallery .item img {
   border: 1px solid #d8d8d8;
   background: #fff;
-  min-height: 276px;
-  width: 100%;
+  height: 250px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .gallery .carousel-control {
   background: transparent;
@@ -1381,8 +1425,6 @@ span.mejs-time-total.mejs-time-slider {
   margin: 20px 0;
 }
 .reviews_banks .item div.author.xs { display: none; }
-.gallery #gallery_sm { display: none; }
-.gallery #gallery_xs { display: none; }
 
 .fix-height {
   max-height: 164px;
@@ -1807,8 +1849,6 @@ span.mejs-time-total.mejs-time-slider {
   .reviews_banks .item div.author.xs { display: block; }
   .reviews_banks .item div.desc img,
   .reviews_banks .item div.desc span.author { display: none; }
-  .gallery #gallery { display: none; }
-  .gallery #gallery_sm { display: block; }
   .card_page .text > div img { margin-bottom: 15px; width: 100%; }
   .card_page .text div.desc { padding-left: 30px; }
   .card_page .text > div.text-center { text-align: right !important; }
@@ -1824,8 +1864,6 @@ span.mejs-time-total.mejs-time-slider {
   .card_page .text > div img { width: auto; }
   .card_page .text > div.text-center { text-align: center !important; }
   .card_page .text div.desc { padding-left: 0; }
-  .gallery #gallery_sm { display: none; }
-  .gallery #gallery_xs { display: block; }
   .gallery .item > div { float: none; margin: 0 auto; }
   .reviews_banks .item > div.desc { padding-left: 0; }
   .reviews_banks .item > div:first-child { margin-bottom: 20px; }
@@ -1837,6 +1875,8 @@ span.mejs-time-total.mejs-time-slider {
   .advantages { padding: 40px 20px; }
   #reviews_banks .desc { padding-left: 0; }
   #reviews_banks .main_img img { width: auto; }
+  .easy .owl-nav .owl-prev { left: 0; }
+  .easy .owl-nav .owl-next { right: 0; }
 }
 @media (max-width: 600px) {
   .phones-widget ul { width: 100%; }
