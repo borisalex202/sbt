@@ -264,7 +264,7 @@
                 </ul>
             </div>
 
-            <h3>Сравнение товаров</h3>
+            <h1>Сравнение товаров</h1>
 
             <div class="col-xs-12 archive">
 
@@ -292,7 +292,7 @@
                     </div>
                     <div class="hidden-lg hidden-md col-sm-12 col-xs-12 line">
                         <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
-                            <input type="checkbox" id="check1"><label for="check1">Скрыть одинаковые параметры</label>
+                            <input type="checkbox" id="check2"><label for="check1">Скрыть одинаковые параметры</label>
                         </div>
                     </div>
                     <div class="col-xs-12 line gray">
@@ -535,6 +535,16 @@
 
 <script>
     $(function(){
+
+        $('[data-toggle="collapse"]').click(function(){
+            var id_block = $(this).attr('data-target');
+            $('.collapse.in').hide();
+            if($(this).attr('aria-expanded') == 'true') {
+                $(id_block).hide();
+            } else {
+                $(id_block).show();
+            }
+        });
 
         $('button.sort_button').click(function(){
             $(this).toggleClass('active');

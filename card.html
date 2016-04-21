@@ -7,6 +7,7 @@
     <title>SBT</title>
 
     <link href="js/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/johndyer/css/mediaelementplayer.min.css">
@@ -333,63 +334,23 @@
                 <h3>Фото</h3>
                 <div id="gallery" class="owl-carousel easy slide gray">
                     <div class="item">
-                        <a class="" href="#">
+                        <a class="fancybox" rel="group1" href="images/gallery/gallery1.png">
                             <img src="images/gallery/gallery1.png" alt="Фото">
                         </a>
                     </div>
                     <div class="item">
-                        <a class="" href="#">
+                        <a class="fancybox" rel="group1" href="images/gallery/gallery2.png">
                             <img src="images/gallery/gallery2.png" alt="Фото">
                         </a>
                     </div>
                     <div class="item">
-                        <a class="" href="#">
+                        <a class="fancybox" rel="group1"  href="images/gallery/gallery3.png">
                             <img src="images/gallery/gallery3.png" alt="Фото">
                         </a>
                     </div>
                     <div class="item">
-                        <a class="" href="#">
+                        <a class="fancybox" rel="group1" href="images/gallery/gallery4.png#">
                             <img src="images/gallery/gallery4.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery5.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery6.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery1.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery2.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery3.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery4.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery5.png" alt="Фото">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="" href="#">
-                            <img src="images/gallery/gallery6.png" alt="Фото">
                         </a>
                     </div>
                 </div>
@@ -867,18 +828,35 @@
         </footer><!-- /footer -->
     </div>
 
-</div><!-- /.wrapper -->
-<!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script src="js/johndyer/js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/johndyer/js/mediaelement-and-player.min.js"></script>
 
+<!-- Owl-carousel -->
 <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Fancybox -->
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 
 <script>
     $(function(){
+
+        $('[data-toggle="collapse"]').click(function(){
+            var id_block = $(this).attr('data-target');
+            $('.collapse.in').hide();
+            if($(this).attr('aria-expanded') == 'true') {
+                $(id_block).hide();
+            } else {
+                $(id_block).show();
+            }
+
+        });
+
         $.fn.toggleHTML = function(a, b) {
             this.html(function(_, html){
                 return html === a  ? b : a;
@@ -986,8 +964,26 @@
             }
         });
 
-    });
+        var viewport = jQuery(window).width();
+        var itemCount = jQuery("#gallery .owl-stage > div").length;
 
+        if (
+            (viewport >= 1600 && itemCount > 6)
+            || ((viewport >= 1200 && viewport < 992) && itemCount > 5)
+            || ((viewport >= 992 && viewport < 767) && itemCount > 4)
+            || (viewport <= 992 && itemCount > 3)
+            )
+        {
+            jQuery('#gallery .owl-prev, #gallery .owl-next').show();
+        }
+        else
+        {
+            jQuery('#gallery .owl-prev, #gallery .owl-next').hide();
+        }
+
+        $(".fancybox").fancybox();
+
+    });
 </script>
 
 </body>

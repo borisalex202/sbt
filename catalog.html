@@ -264,7 +264,7 @@
             </div>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 products">
-                <h3>Счетчики банкнот</h3>
+                <h1>Счетчики банкнот</h1>
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 filters">
                     <div class="filter">
@@ -847,6 +847,16 @@
 
 <script>
     $(function(){
+
+        $('[data-toggle="collapse"]').click(function(){
+            var id_block = $(this).attr('data-target');
+            $('.collapse.in').hide();
+            if($(this).attr('aria-expanded') == 'true') {
+                $(id_block).hide();
+            } else {
+                $(id_block).show();
+            }
+        });
 
         $('button.sort_button').click(function(){
             $(this).toggleClass('active');
