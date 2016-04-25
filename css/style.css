@@ -1593,6 +1593,7 @@ span.mejs-time-total.mejs-time-slider {
 }
 .close-compare {
   width: 20px;
+  height: 20px;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1621,19 +1622,56 @@ span.mejs-time-total.mejs-time-slider {
 }
 .compare-page {
   border: 1px solid #c8c8c8;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
 }
 .compare-page .line {
-  display: table
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 41px;
+  position: relative;
 }
-.compare-page .line.gray {
+.compare-page .line.gray div {
   background-color: #f1f1f1;
 }
+.compare-page .line.full {
+  display: inherit;
+}
+.compare-page .line.full div {
+  width: 100%;
+}
+.compare-page .line .head {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  min-height: 41px;
+  display: inline-block;
+}
+.compare-page .line .head + div {
+  margin-left: 20%;
+}
 .compare-page .line div {
-  display: table-cell;
+  width: 20%;
+  min-width: 20%;
+  min-height: 41px;
   padding: 10px 15px;
-  float: none;
+  float: left;
   border-right: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8;
+}
+@-moz-document url-prefix() {
+  .compare-page .line div {
+    display: initial;
+    float: left;
+  }
+}
+.compare-page .line div:not(:root:root) .style {
+  display: initial;
+  float: left;
 }
 .compare-page .line div.active {
   background-color: #dc4229;
@@ -1837,12 +1875,13 @@ div#main_menu ul li:hover > .sub-menu {
   div#main_menu ul li a { font-size: 12px;  margin: 0 7px; }
   div#main_menu ul.contacts li.phone a { font-size: 16px; }
   .card_page .text > div img { margin-bottom: 15px; }
-  .gallery .item > div img { min-height: auto; max-height: 240px; }
+  .gallery .item > div img { min-height: inherit; max-height: 240px; }
   .video .mejs-container { height: 300px !important; overflow: hidden; }
   .video .mejs-poster.mejs-layer { height: 300px !important; }
   .video .mejs-overlay.mejs-layer.mejs-overlay-play { height: 300px !important; }
   .phones-widget ul { width: 100%; }
   .partners { padding: 40px 2% 40px 6%; }
+  .product-compare img { width: 100%; height: auto; }
 }
 @media (max-width: 1024px) and (min-width: 1024px) {
   .related_products .item a { width: 16%; }
@@ -1946,9 +1985,16 @@ div#main_menu ul li:hover > .sub-menu {
   .post.single  p.title { font-size: 20px; margin-bottom: 20px; }
   .post.single img.pull-left, .post.single img.pull-right { float: none !important; width: 100%; }
   #content h3.text-left, #content h3.text-right { text-align: center; }
-  .compare-page .line div { display: inherit; float: left; }
+  .compare-page .line .head { position: absolute; top: 0; right: 0; width: 100%; height: 41px; display: block; }
   .compare-page .line div:first-child { border-right: 0; }
-  .compare-page .line { text-align: center; }
+  .compare-page .line { text-align: center; padding-top: 41px; }
+  .compare-page .line .head + div { margin-left: 0; }
+  .compare-page .line div { width: 30%; min-width: 30%;}
+  .compare-page .line.full,
+  .compare-page .line:first-child,
+  .compare-page .line:last-child { padding-top: 0; }
+  .compare-page .line.gray { padding-top: 0; }
+  .compare-page .line.gray .head { position: static; }
 }
 @media (min-width: 768px) {
   .modal-dialog {
@@ -1999,6 +2045,7 @@ div#main_menu ul li:hover > .sub-menu {
   .text .desc { padding-left: 0; }
   .partners { text-align: center; padding: 40px 20px; }
   #global_menu .glyphicon-menu-hamburger { display: none; }
+  .compare-page .line div { width: 50%; min-width: 50%; }
 }
 @media (max-width: 700px) {
   .service .thumb { width: 100%; }
@@ -2064,6 +2111,7 @@ div#main_menu ul li:hover > .sub-menu {
   footer.footer > .menu { width: 100%; text-align: center; }
   #solutions .carousel-control.left,
   #solutions .carousel-control.right { top: 37%;}
+  .compare-page .line div { width: 100%; min-width: 100%; }
 }
 @media (max-width: 375px) {
   .filter { width: 100%; }
