@@ -353,6 +353,8 @@
                             <img src="images/gallery/gallery4.png" alt="Фото">
                         </a>
                     </div>
+
+
                 </div>
 
             </div>
@@ -846,7 +848,7 @@
 <script>
     $(function(){
 
-        $('[data-toggle="collapse"]').click(function(){
+        $('.navigation [data-toggle="collapse"], .collapse [data-toggle="collapse"]').click(function(){
             var id_block = $(this).attr('data-target');
             $('.collapse.in').hide();
             if($(this).attr('aria-expanded') == 'true') {
@@ -939,7 +941,7 @@
             }
         });
         $('#gallery').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 20,
             nav: true,
             responsive:{
@@ -969,9 +971,11 @@
 
         if (
             (viewport >= 1600 && itemCount > 6)
-            || ((viewport >= 1200 && viewport < 992) && itemCount > 5)
-            || ((viewport >= 992 && viewport < 767) && itemCount > 4)
-            || (viewport <= 992 && itemCount > 3)
+            || ((viewport >= 1200 && viewport <= 1599) && itemCount > 5)
+            || ((viewport >= 992 && viewport <= 1199) && itemCount > 4)
+            || ((viewport >= 767 && viewport <= 991) && itemCount > 3)
+            || ((viewport >= 700 && viewport <= 766) && itemCount > 2)
+            || ((viewport >= 1 && viewport <= 699) && itemCount > 1)
             )
         {
             jQuery('#gallery .owl-prev, #gallery .owl-next').show();
