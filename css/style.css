@@ -1198,13 +1198,13 @@ a.link {
   font-weight: 400;
   padding-top: 20%;
   margin-bottom: 5px;
-  line-height: 93px;
+  line-height: 1.178em;
 }
 .banner small {
   color: #2c2c2c;
   font-size: 24px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 1.084em;
 }
 
 .advantages {
