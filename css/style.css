@@ -1605,6 +1605,7 @@ span.mejs-time-total.mejs-time-slider {
 .product-compare img {
   display: block;
   margin: 0 0 10px 0;
+  max-width: 100%;
 }
 .product-compare i.glyphicon-star {
   position: absolute;
@@ -1645,14 +1646,8 @@ span.mejs-time-total.mejs-time-slider {
   width: 100%;
 }
 .compare-page .line .head {
-  position: absolute;
-  left: 0;
   height: 100%;
   min-height: 41px;
-  display: inline-block;
-}
-.compare-page .line .head + div {
-  margin-left: 20%;
 }
 .compare-page .line div {
   width: 20%;
@@ -1834,7 +1829,14 @@ div#main_menu ul li:hover > .sub-menu {
   top: 30px;
   transition: .4s;
 }
-
+h2.compareCategoryName {
+  margin: 20px 0 10px;
+  font-size: 32px;
+}
+.compare-page .line:first-child,
+.compare-page .line:last-child {
+  height: 228px;
+}
 
 @media (min-width: 1600px) {
   .container { width: 1566px; }
