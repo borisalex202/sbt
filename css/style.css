@@ -1646,7 +1646,6 @@ span.mejs-time-total.mejs-time-slider {
   width: 100%;
 }
 .compare-page .line .head {
-  height: 100%;
   min-height: 41px;
 }
 .compare-page .line div {
@@ -1812,7 +1811,7 @@ span.mejs-time-total.mejs-time-slider {
   width: 600px;
   opacity: 0;
   top: -1000px;
-  transition: .1s;
+  transition: .3s;
 }
 .sub-menu li {
   display: inline-block;
@@ -1826,8 +1825,8 @@ div#main_menu ul li .sub-menu li a {
 }
 div#main_menu ul li:hover > .sub-menu {
   opacity: 1;
-  top: 30px;
-  transition: .4s;
+  top: 25px;
+  transition: .9s;
 }
 h2.compareCategoryName {
   margin: 20px 0 10px;
