@@ -863,15 +863,18 @@
             $(this).closest('.filter').find('.show_filter').toggle("slideup");
         });
         $('.filter span').click(function(){
-            $('.filter span').removeClass('active');
-            $('.show_filter').hide("slideup");
-            $(this).toggleClass('active');
-            $(this).closest('.filter').find('.show_filter').toggle("slideup");
+            if($(this).closest('.filter').hasClass('active')) {
+                $(this).closest('.filter').removeClass('active');
+            } else {
+                $('.filter').removeClass('active');
+                $('.show_filter').hide("slideup");
+                $(this).closest('.filter').toggleClass('active');
+            }
         });
 
         $(document).click(function(event) {
             if ($(event.target).closest(".filter").length) return;
-            $('.filter span').removeClass('active');
+            $('.filter').removeClass('active');
             $('.show_filter').hide("slideup");
             event.stopPropagation();
         });

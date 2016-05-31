@@ -1094,7 +1094,7 @@ div.more {
   cursor: pointer;
   position: relative;
 }
-.filter span.active {
+.filter.active span {
   border-top: 1px solid #c4c4c4;
   border-left: 1px solid #c4c4c4;
   border-right: 1px solid #c4c4c4;
@@ -1131,6 +1131,9 @@ div.more {
   border: 1px solid #c4c4c4;
   padding: 8px;
   z-index: 9;
+}
+.filter.active .show_filter {
+  display: block;
 }
 .filter input[type="checkbox"] {
   display: none;
@@ -1229,7 +1232,7 @@ a.link {
 a.beauty_link {
   display: inline-block;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 30px;
   color: #dc4229;
   font-size: 18px;
   font-weight: 300;
@@ -1711,8 +1714,8 @@ span.mejs-time-total.mejs-time-slider {
 .text img {
   width: 100%;
 }
-.text .desc {
-  padding-left: 25px;
+.text .thumb {
+  padding-right: 25px;
 }
 .btn-compare {
   margin: 60px 0 30px;
