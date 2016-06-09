@@ -1729,6 +1729,14 @@ span.mejs-time-total.mejs-time-slider {
   -o-transition: all .5s;
   transition: all .5s;
 }
+.btn-compare.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  z-index: 99;
+  right: 12%;
+  padding: 5px 20px;
+}
 .btn-compare span {
   vertical-align: text-bottom;
 }
