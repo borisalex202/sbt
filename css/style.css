@@ -898,7 +898,7 @@ ol li:before {
 }
 
 .products {
-  padding: 40px 16%;
+  padding: 40px 10%;
   display: table;
 }
 .products.standard-padding {
@@ -1821,7 +1821,8 @@ span.mejs-time-total.mejs-time-slider {
   z-index: 999;
   width: 600px;
   opacity: 0;
-  top: -1000px;
+  top: 0;
+  visibility: hidden;
   transition: .3s;
 }
 .sub-menu li {
@@ -1836,6 +1837,7 @@ div#main_menu ul li .sub-menu li a {
 }
 div#main_menu ul li:hover > .sub-menu {
   opacity: 1;
+  visibility: visible;
   top: 25px;
   transition: .9s;
 }
@@ -1846,6 +1848,28 @@ h2.compareCategoryName {
 .compare-page .line:first-child,
 .compare-page .line:last-child {
   height: 228px;
+}
+
+.hide_info table td:last-child {
+  padding-left: 0;
+}
+.banner img {
+  max-width: 100%;
+}
+.owl-stage {
+  margin: 0 auto;
+}
+.owl-center:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: 0 auto;
+  border-bottom: 30px solid #fff;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
 }
 
 @media (min-width: 1600px) {
