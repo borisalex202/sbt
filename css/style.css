@@ -1126,7 +1126,7 @@ div.more {
   display: none;
   position: absolute;
   top: 24px;
-  min-width: 115%;
+  min-width: 290px;
   background: #f4f4f4;
   border: 1px solid #c4c4c4;
   padding: 8px;
@@ -1821,7 +1821,7 @@ span.mejs-time-total.mejs-time-slider {
   z-index: 999;
   width: 600px;
   opacity: 0;
-  top: 0;
+  top: 25px;
   visibility: hidden;
   transition: .3s;
 }
@@ -1838,7 +1838,6 @@ div#main_menu ul li .sub-menu li a {
 div#main_menu ul li:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
-  top: 25px;
   transition: .9s;
 }
 h2.compareCategoryName {
