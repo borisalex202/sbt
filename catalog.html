@@ -199,9 +199,9 @@
                             <p>Сортировщики банкнот</p>
                         </a>
                     </div>
-                    <div class="item">
+                    <div class="item goto">
                         <a class="" href="#">
-                            <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                            <img src="images/categories/cat2.png" alt="Сортировщики банкнот">
                             <p>Сортировщики банкнот</p>
                         </a>
                     </div>
@@ -225,7 +225,7 @@
                     </div>
                     <div class="item">
                         <a class="" href="#">
-                            <img src="images/categories/cat1.png" alt="Сортировщики банкнот">
+                            <img src="images/categories/cat3.png" alt="Сортировщики банкнот">
                             <p>Сортировщики банкнот</p>
                         </a>
                     </div>
@@ -879,8 +879,10 @@
             event.stopPropagation();
         });
 
+        var carousel = $("#related_products");
+
         $('#related_products').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             center: true,
@@ -901,7 +903,11 @@
                     items:6
                 }
             }
-        })
+        });
+
+        $('.item.goto').parent('.owl-item').addClass('goto');
+        var currentActive = $('.owl-item.goto').index();
+        carousel.trigger('to.owl.carousel', [currentActive, 0]);
     });
 </script>
 

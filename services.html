@@ -470,7 +470,7 @@
             $(this).closest('.service').children('.pop_up').toggle("fade");
         });
         $(document).click(function (event) {
-            if ($(event.target).closest('.service > .pop_up').length == 0 && !$(event.target).hasClass('title') ) {
+            if ($(event.target).closest('.service').length == 0 && !$(event.target).hasClass('title') ) {
                 $('.pop_up').hide("fade");
             }
         });

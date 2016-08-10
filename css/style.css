@@ -1870,6 +1870,35 @@ h2.compareCategoryName {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
 }
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+  align-items: center;
+}
+.glyphicon-star-empty span {
+  opacity: 0;
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  color: #000;
+  font-size: 8px;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  line-height: 10px;
+  padding: 0 4px;
+}
+.glyphicon-star-empty.active:before {
+  content: "\e006";
+}
+.glyphicon-star-empty.active span {
+  opacity: 1;
+}
 
 @media (min-width: 1600px) {
   .container { width: 1566px; }
@@ -2081,6 +2110,7 @@ h2.compareCategoryName {
   .partners { text-align: center; padding: 40px 20px; }
   #global_menu .glyphicon-menu-hamburger { display: none; }
   .compare-page .line div { width: 50%; min-width: 50%; }
+  .flex { display: block; }
 }
 @media (max-width: 700px) {
   .service .thumb { width: 100%; }
