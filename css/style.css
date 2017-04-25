@@ -1900,6 +1900,15 @@ h2.compareCategoryName {
   opacity: 1;
 }
 
+.product-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+}
+
 @media (min-width: 1600px) {
   .container { width: 1566px; }
 }
@@ -2059,6 +2068,9 @@ h2.compareCategoryName {
   .compare-page .line:last-child { padding-top: 0; }
   .compare-page .line.gray { padding-top: 0; }
   .compare-page .line.gray .head { position: static; }
+  .product-link {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .modal-dialog {
